@@ -39,3 +39,4 @@ CMakeLists.txt
 # Intelliji Files
 .idea/*
 cmake-build-debug/*
+.vscode
