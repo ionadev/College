@@ -4,19 +4,9 @@ using namespace std;
 class Time
 {
 	public:
-	float convertTime(int min)
+	void convertTime(int min)
 	{
-		float hour=0.0;
-
-		float Fmin=0.0;
-
-		Fmin = (float)(min);
-
-		hour = Fmin/60.0;
-
-		cout << hour << endl;
-
-		return hour;
+		cout << min << " minutes means " << min/60 << " hours and " << min%60 << " minutes";
 	}
 };
 
