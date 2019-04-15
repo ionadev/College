@@ -4,11 +4,17 @@ using namespace std;
 class Time
 {
 	public:
-	int convertTime(int min)
+	float convertTime(int min)
 	{
-		int hour;
+		float hour=0.0;
 
-		hour = min/60;
+		float Fmin=0.0;
+
+		Fmin = (float)(min);
+
+		hour = Fmin/60.0;
+
+		cout << hour << endl;
 
 		return hour;
 	}
@@ -16,11 +22,11 @@ class Time
 
 int main() 
 {
-	int min;
+	int min = 0;
 	Time t;
 
 	cout << "Enter The Minutes" << endl;
 	cin >> min;
 
-	cout << "Hour is: " << t.convertTime(min);
-}
+	cout << min << " minutes is equivalent to " << t.convertTime(min) << " hours";
+}	
