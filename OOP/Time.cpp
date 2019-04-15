@@ -6,7 +6,8 @@ class Time
 	public:
 	void convertTime(int min)
 	{
-		cout << min << " minutes means " << min/60 << " hours and " << min%60 << " minutes";
+		if(min == 0) cout << "0 Minute Means Nothing!"
+		else cout << min << " minutes means " << min/60 << " hours and " << min%60 << " minutes";
 	}
 };
 
