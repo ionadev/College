@@ -18,5 +18,5 @@ int main()
 	cout << "Enter The Minutes" << endl;
 	cin >> min;
 
-	cout << min << " minutes is equivalent to " << t.convertTime(min) << " hours";
+	t.convertTime(min);
 }	
