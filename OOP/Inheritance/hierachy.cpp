@@ -45,7 +45,7 @@ int main()
 	do 
 	{
 		o.sell();
-		cout << "Do You Want To Buy More?\ny for yes\tAny key For No" << endl;
+		cout << "Do You Want To Buy More?\n\ty for yes\n\tAny key For No" << endl;
 		cin >> want;
 	}
 	while(want == 'y');
