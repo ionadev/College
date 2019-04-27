@@ -32,7 +32,7 @@ public:
 		} 
 		else 
 		{
-			cout << "No Stock!";
+			cout << "No Stock!" << endl;
 		}
 	}
 };
@@ -42,6 +42,12 @@ int main()
 	Sales o;
 	char want;
 	o.set();
-	o.sell();
+	do 
+	{
+		o.sell();
+		cout << "Do You Want To Buy More?\ny for yes\tAny key For No" << endl;
+		cin >> want;
+	}
+	while(want == 'y');
 	return 0;
 }
