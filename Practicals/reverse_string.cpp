@@ -13,7 +13,7 @@ void main()
 	char name[10];
 
 	cout << "Enter The Name" << endl;
-	cin.get_line(name, 10);
+	cin.getline(name, 10);
 
 	reverse(name);
 }
@@ -24,8 +24,8 @@ void reverse(char name[10])
 	int c = 0;
 	for (int i = 0; i < 10; i++)
 	{
-		swap = a[i];
-		a[i] = name[10 - c];
+		swap = n[i];
+		n[i] = name[10 - c];
 		name[10 - c] = swap;
 
 		c++;
