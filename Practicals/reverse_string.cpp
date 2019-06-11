@@ -8,28 +8,26 @@ using namespace std;
 
 void reverse(char []);
 
-void main()
+int main()
 {
 	char name[10];
 
 	cout << "Enter The Name" << endl;
-	cin.getline(name, 10);
+	cin.getline(name, 11);
 
 	reverse(name);
+	
+	return 0;
 }
 
 void reverse(char name[10])
 {
-	char n[10], swap;
-	int c = 0;
-	for (int i = 0; i < 10; i++)
+	char n[10];
+	for (int i = 0; i < 5; i++)
 	{
-		swap = n[i];
-		n[i] = name[10 - c];
-		name[10 - c] = swap;
-
-		c++;
+		n[i] = name[9 - i];
+		n[9 - i] = name[i];
 	}
 
-	cout << n;
+	cout << n << endl;
 }
