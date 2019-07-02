@@ -11,7 +11,7 @@ int main()
     return 0;
 }
 
-void replace(char a[80])
+void replace(char a[])
 {
 	for (int i = 0; a[i] != '\0'; i++)
 	{
