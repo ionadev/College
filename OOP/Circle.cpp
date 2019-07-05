@@ -1,13 +1,17 @@
 #include <iostream>
+using namespace std;
 
 class Circle
 {
-	const float pi = 3.14
-	public: 
-		// float area(float &radius)
-		// {
-		// 	return (*radius) * (*radius);
-		// }
+	const float pi = 3.14;
+	float radius,x,y;
+	public:
+		Circle(float r, float _x, float _y)
+		{
+			radius = r;
+			x = _x;
+			y = _y;
+		}
 
 		void area(float radius)
 		{
@@ -16,7 +20,7 @@ class Circle
 			cout << "Area is: " << result << endl;
 		}
 
-		void circumference(float radius)
+		void circumference()
 		{
 			float result;
 			result = 2 * pi * radius;
@@ -26,12 +30,20 @@ class Circle
 
 int main()
 {
-	float i;
-	Circle c;
+	float i,x,y;
 
 	std::cout << "Enter The Radius of the circle";
 	std::cin >> i;
 
-	a.area(i);
-	a.circumference(i);
+	std::cout << "Enter The x coordinate of the circle";
+	std::cin >> x;
+
+	std::cout << "Enter The y coordinate of the circle";
+	std::cin >> y;
+
+
+	Circle c(i,x,y);
+
+	c.area(i);
+	c.circumference();
 }
