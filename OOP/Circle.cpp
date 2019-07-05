@@ -13,7 +13,7 @@ class Circle
 			y = _y;
 		}
 
-		void area(float radius)
+		void area()
 		{
 			float result;
 			result = pi * (radius*radius);
@@ -44,6 +44,6 @@ int main()
 
 	Circle c(i,x,y);
 
-	c.area(i);
+	c.area();
 	c.circumference();
 }
