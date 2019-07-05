@@ -29,7 +29,7 @@ class Ratio
 
     void print()
     {
-        cout << "The Ratio is now: " << numerator << ":" << denominator << endl;
+        cout << "The Ratio is now: " << numerator << "/" << denominator << endl;
     }
 };
 
