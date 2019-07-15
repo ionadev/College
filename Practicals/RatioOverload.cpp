@@ -4,11 +4,11 @@ using namespace std;
 class Ratio
 {
 	protected:
-		float a,b,final;
+		float a,b;
 	public:
 		Ratio() 
 		{
-			a = b = final = 0.0;
+			a = b = 0.0;
 		}
 
 		void assign(float _a, float _b)	 
@@ -20,13 +20,14 @@ class Ratio
 		Ratio operator + (Ratio &r) 
 		{
 			Ratio result;
-			result.final = ((b * r.a) + (r.b * a)) / (r.b * b);
+			result.a = ((b * r.a) + (r.b * a));
+			result.b =  (r.b * b);
 			return result;
 		}
 
-		void print() 
+		void print()
 		{
-			cout << final;
+			cout << a << "/" << b << endl;
 		}
 };
 
