@@ -25,6 +25,14 @@ class Ratio
 			return result;
 		}
 
+		Ratio operator / (Ratio &r)
+		{
+			Ratio result;
+			result.a = (a * r.b);
+			result.b = (b * r.a);
+			return result;
+		}
+
 		void print()
 		{
 			cout << a << "/" << b << endl;
@@ -33,10 +41,12 @@ class Ratio
 
 int main()
 {	
-	Ratio a,b,r;
+	Ratio a,b,r,o;
 	a.assign(1,2);
 	b.assign(2,3);
 	r = a + b;
 	r.print();
+	o = a / b;
+	o.print();
 	return 0;
 }
