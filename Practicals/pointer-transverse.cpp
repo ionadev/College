@@ -20,20 +20,16 @@ int main()
 void transverse(int *a)
 {
 	int total = 0;
+cout << &a;
 	for (int i = 0; i < 10; i++)
 	{	
-		if(i == 0)
-		{
-			cout << &a
-		}
+		
 		cout << *a << "\t";
 		total += *a;
 		a++;
-		if(i == 9)
-		{
-			cout << &a
-		}
+		
 	}
-
+	a--;
+cout << &a;
 	cout << "The Total Is: " << total;
 }
